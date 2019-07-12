@@ -1425,7 +1425,7 @@ export class Editor implements Controller {
   ): Editor;
   setNodeByKey(
     key: string,
-    properties: BlockProperties | InlineProperties | string
+    properties: Partial<BlockProperties> | Partial<InlineProperties> | string
   ): Editor;
   setNodeByPath(
     path: Path,
