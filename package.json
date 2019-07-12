@@ -1,6 +1,97 @@
 {
-  "private": true,
+  "_from": "@types/slate",
+  "_id": "@types/slate@0.44.12",
+  "_inBundle": false,
+  "_integrity": "sha512-EBo29O8/Uyb8DmD+RtzgDIFxv63sR1m6S6PygXEFX+A2vHIKiY66x/GZeQ4Omvna4SfyVW1XgoTXmL+cy0jcpA==",
+  "_location": "/@types/slate",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@types/slate",
+    "name": "@types/slate",
+    "escapedName": "@types%2fslate",
+    "scope": "@types",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@types/slate/-/slate-0.44.12.tgz",
+  "_shasum": "3c5df1ea15bde0438687027f50898b2f591fd51a",
+  "_spec": "@types/slate",
+  "_where": "D:\\per\\data\\packages\\slate-types",
+  "bugs": {
+    "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Andy Kent",
+      "url": "https://github.com/andykent"
+    },
+    {
+      "name": "Jamie Talbot",
+      "url": "https://github.com/majelbstoat"
+    },
+    {
+      "name": "Jan Löbel",
+      "url": "https://github.com/JanLoebel"
+    },
+    {
+      "name": "Brandon Shelton",
+      "url": "https://github.com/YangusKhan"
+    },
+    {
+      "name": "Kalley Powell",
+      "url": "https://github.com/kalley"
+    },
+    {
+      "name": "Francesco Agnoletto",
+      "url": "https://github.com/Kornil"
+    },
+    {
+      "name": "Irwan Fario Subastian",
+      "url": "https://github.com/isubasti"
+    },
+    {
+      "name": "Hanna Greaves",
+      "url": "https://github.com/sgreav"
+    },
+    {
+      "name": "Jack Allen",
+      "url": "https://github.com/jackall3n"
+    },
+    {
+      "name": "Benjamin Evenson",
+      "url": "https://github.com/benjiro"
+    },
+    {
+      "name": "Han Jeon",
+      "url": "https://github.com/hanstar17"
+    }
+  ],
   "dependencies": {
+    "@types/react": "*",
     "immutable": "^3.8.2"
-  }
+  },
+  "deprecated": false,
+  "description": "TypeScript definitions for slate",
+  "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped#readme",
+  "license": "MIT",
+  "main": "",
+  "name": "@types/slate",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+    "directory": "types/slate"
+  },
+  "scripts": {},
+  "typeScriptVersion": "2.8",
+  "types": "index",
+  "typesPublisherContentHash": "79ab63806c461d3478032aa26d577cb43c39c013de473e1820063c9d4f6b7a09",
+  "version": "0.44.12"
 }
