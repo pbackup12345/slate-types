@@ -76,7 +76,7 @@
   ],
   "dependencies": {
     "@types/react": "*",
-    "immutable": "^3.8.2"
+    "immutable": "4.0.0-rc.12"
   },
   "deprecated": false,
   "description": "TypeScript definitions for slate",
