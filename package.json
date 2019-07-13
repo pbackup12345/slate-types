@@ -1,33 +1,36 @@
 {
-  "_from": "@types/slate",
-  "_id": "@types/slate@0.44.12",
+  "_args": [
+    [
+      "@types/slate-react@0.22.1",
+      "D:\\per\\data\\notex"
+    ]
+  ],
+  "_from": "@types/slate-react@0.22.1",
+  "_id": "@types/slate-react@0.22.1",
   "_inBundle": false,
-  "_integrity": "sha512-EBo29O8/Uyb8DmD+RtzgDIFxv63sR1m6S6PygXEFX+A2vHIKiY66x/GZeQ4Omvna4SfyVW1XgoTXmL+cy0jcpA==",
-  "_location": "/@types/slate",
+  "_integrity": "sha512-+Tmrsl1XCJ0u8Xg66TKVoWZTl89ZSyz8gYGJtlaKSTQdFwVCMdw5zrtRZ+qvKKBkRe1VFkhMUctyT/uyYxLysw==",
+  "_location": "/@types/slate-react",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "version",
     "registry": true,
-    "raw": "@types/slate",
-    "name": "@types/slate",
-    "escapedName": "@types%2fslate",
+    "raw": "@types/slate-react@0.22.1",
+    "name": "@types/slate-react",
+    "escapedName": "@types%2fslate-react",
     "scope": "@types",
-    "rawSpec": "",
+    "rawSpec": "0.22.1",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "0.22.1"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@types/slate/-/slate-0.44.12.tgz",
-  "_shasum": "3c5df1ea15bde0438687027f50898b2f591fd51a",
-  "_spec": "@types/slate",
-  "_where": "D:\\per\\data\\packages\\slate-types",
+  "_resolved": "https://registry.npmjs.org/@types/slate-react/-/slate-react-0.22.1.tgz",
+  "_spec": "0.22.1",
+  "_where": "D:\\per\\data\\notex",
   "bugs": {
     "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues"
   },
-  "bundleDependencies": false,
   "contributors": [
     {
       "name": "Andy Kent",
@@ -42,16 +45,12 @@
       "url": "https://github.com/JanLoebel"
     },
     {
+      "name": "Patrick Sachs",
+      "url": "https://github.com/PatrickSachs"
+    },
+    {
       "name": "Brandon Shelton",
       "url": "https://github.com/YangusKhan"
-    },
-    {
-      "name": "Kalley Powell",
-      "url": "https://github.com/kalley"
-    },
-    {
-      "name": "Francesco Agnoletto",
-      "url": "https://github.com/Kornil"
     },
     {
       "name": "Irwan Fario Subastian",
@@ -62,36 +61,36 @@
       "url": "https://github.com/sgreav"
     },
     {
+      "name": "Francesco Agnoletto",
+      "url": "https://github.com/Kornil"
+    },
+    {
       "name": "Jack Allen",
       "url": "https://github.com/jackall3n"
     },
     {
       "name": "Benjamin Evenson",
       "url": "https://github.com/benjiro"
-    },
-    {
-      "name": "Han Jeon",
-      "url": "https://github.com/hanstar17"
     }
   ],
   "dependencies": {
     "@types/react": "*",
+    "@types/slate": "*",
     "immutable": "^3.8.2"
   },
-  "deprecated": false,
-  "description": "TypeScript definitions for slate",
+  "description": "TypeScript definitions for slate-react",
   "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped#readme",
   "license": "MIT",
   "main": "",
-  "name": "@types/slate",
+  "name": "@types/slate-react",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git",
-    "directory": "types/slate"
+    "directory": "types/slate-react"
   },
   "scripts": {},
   "typeScriptVersion": "2.8",
   "types": "index",
-  "typesPublisherContentHash": "79ab63806c461d3478032aa26d577cb43c39c013de473e1820063c9d4f6b7a09",
-  "version": "0.44.12"
+  "typesPublisherContentHash": "8f525260732b11f825ff2fb06b0b0b28f97d84d057386dab69b1243e64aa07bd",
+  "version": "0.22.1"
 }
