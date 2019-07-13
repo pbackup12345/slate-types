@@ -1509,6 +1509,7 @@ export class Editor implements Controller {
   // custom notex commands
   insertCodeBlock(codeText: string): Editor;
   insertCustomBlock(blockType: string): Editor;
+  insertIframe(template: { [key: string]: any }): Editor;
   formatList(listType: string): Editor;
   formatBlock(blockType: string, dataObject: object | Data): Editor;
 }
