@@ -1516,6 +1516,9 @@ export class Editor implements Controller {
   unwrapLink(): Editor;
   insertLink(url: string): Editor;
   isLinkActive(): boolean;
+  insertYoutubeBlock(): Editor;
+  insertGoogleMapsBlock(): Editor;
+  insertTwitter(): Editor;
 }
 
 export interface Controller {
