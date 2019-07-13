@@ -155,6 +155,7 @@ export interface BasicEditorProps {
   spellCheck?: boolean;
   style?: React.CSSProperties;
   tabIndex?: number;
+  defaultValue: Value;
 }
 
 export type EditorProps = BasicEditorProps & Plugin;
