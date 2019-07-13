@@ -139,7 +139,7 @@ export interface Plugin extends CorePlugin {
 }
 
 export interface BasicEditorProps {
-  value: Value;
+  value?: Value;
   autoCorrect?: boolean;
   autoFocus?: boolean;
   className?: string;
@@ -155,7 +155,7 @@ export interface BasicEditorProps {
   spellCheck?: boolean;
   style?: React.CSSProperties;
   tabIndex?: number;
-  defaultValue: Value;
+  defaultValue?: Value;
 }
 
 export type EditorProps = BasicEditorProps & Plugin;
@@ -172,6 +172,8 @@ export class Editor extends React.Component<EditorProps, EditorState>
   readonly operations: Immutable.List<Operation>;
   readonly readOnly: boolean;
   readonly value: Value;
+
+  defaultValue?: Value;
 
   // Instance methods
   resolveController(
