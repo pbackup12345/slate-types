@@ -65,14 +65,14 @@ export interface ValueProperties {
   document?: Document;
   selection?: Selection;
   data?: Data;
-  decorations?: Immutable.List<Decoration> | null;
+  annotations?: Immutable.List<Annotation> | null;
 }
 
 export interface ValueJSON {
   document?: DocumentJSON;
   selection?: Selection;
   data?: Data;
-  decorations?: Immutable.List<Decoration> | null;
+  annotations?: Immutable.List<Annotation> | null;
   object?: "value";
 }
 
@@ -83,7 +83,7 @@ export class Value extends Immutable.Record({}) {
   selection: Selection;
   data: Data;
   object: "value";
-  decorations: Immutable.List<Decoration>;
+  annotations: Immutable.List<Annotation>;
 
   readonly anchorText: Text;
   readonly focusText: Text;
@@ -619,7 +619,19 @@ export interface DecorationProperties {
   mark?: Mark | null;
 }
 
+export interface AnnotationProperties {
+  anchor?: Point;
+  focus?: Point;
+  mark?: Mark | null;
+}
+
 export interface DecorationJSON {
+  anchor?: PointJSON;
+  focus?: PointJSON;
+  mark?: MarkJSON | null;
+}
+
+export interface AnnotationJSON {
   anchor?: PointJSON;
   focus?: PointJSON;
   mark?: MarkJSON | null;
@@ -650,13 +662,44 @@ export class Decoration extends BaseRange {
   setProperties(properties: Decoration | DecorationProperties): Decoration;
 }
 
+export class Annotation extends BaseRange {
+  object: "annotation";
+  key: string;
+  anchor: Point;
+  focus: Point;
+  type: string;
+  static create(properties: AnnotationProperties | Range): Annotation;
+  static createList(
+    elements?:
+      | Annotation[]
+      | AnnotationProperties[]
+      | Immutable.List<Annotation>
+      | Immutable.List<AnnotationProperties>
+  ): Immutable.List<Annotation>;
+  static createProperties(
+    attrs: AnnotationProperties | string | Annotation
+  ): AnnotationProperties;
+  static fromJSON(properties: AnnotationJSON): Annotation;
+  static fromJS(properties: AnnotationJSON): Annotation;
+  static isDecoration(maybeAnnotation: any): maybeAnnotation is Annotation;
+
+  toJSON(): AnnotationJSON;
+
+  setProperties(properties: Annotation | AnnotationProperties): Annotation;
+}
+
 export type RangeTypeProperties =
   | RangeProperties
   | SelectionProperties
-  | DecorationProperties;
+  | DecorationProperties
+  | AnnotationProperties;
 
-export type RangeTypeJSON = RangeJSON | SelectionJSON | DecorationJSON;
-export type RangeType = Range | Selection | Decoration;
+export type RangeTypeJSON =
+  | RangeJSON
+  | SelectionJSON
+  | DecorationJSON
+  | AnnotationJSON;
+export type RangeType = Range | Selection | Decoration | Annotation;
 
 // tslint:disable-next-line strict-export-declare-modifiers
 declare class BaseRange extends Immutable.Record({}) {
@@ -1463,6 +1506,8 @@ export class Editor implements Controller {
   insertCustomBlock(blockType: string): Editor;
   formatList(listType: string): Editor;
   formatBlock(blockType: string, dataObject: object | Data): Editor;
+  findPath(node: HTMLElement): Path;
+  isVoid(block: Block): boolean;
 }
 
 export interface Controller {
@@ -2570,5 +2615,7 @@ export interface Controller {
    */
   run(key: string, ...args: any[]): Controller;
 }
+
+interface;
 
 export {};
