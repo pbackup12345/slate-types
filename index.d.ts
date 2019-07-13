@@ -1501,13 +1501,16 @@ export class Editor implements Controller {
   registerQuery(query: string): Editor;
   applyOperation(operation: Operation): Editor;
   run(key: string, ...args: any[]): Editor;
+  // newly added
+  addAnnotation(annotation: AnnotationProperties): Editor;
+  removeAnnotation(annotation: Annotation | AnnotationProperties): Editor;
+  findPath(node: Element): Path;
+  isVoid(block: Block): boolean;
   // custom notex commands
   insertCodeBlock(codeText: string): Editor;
   insertCustomBlock(blockType: string): Editor;
   formatList(listType: string): Editor;
   formatBlock(blockType: string, dataObject: object | Data): Editor;
-  findPath(node: HTMLElement): Path;
-  isVoid(block: Block): boolean;
 }
 
 export interface Controller {
