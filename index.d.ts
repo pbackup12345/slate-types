@@ -1512,6 +1512,10 @@ export class Editor implements Controller {
   insertIframe(template: { [key: string]: any }): Editor;
   formatList(listType: string): Editor;
   formatBlock(blockType: string, dataObject: object | Data): Editor;
+  wrapLink(url: string): Editor;
+  unwrapLink(): Editor;
+  insertLink(url: string): Editor;
+  isLinkActive(): boolean;
 }
 
 export interface Controller {
